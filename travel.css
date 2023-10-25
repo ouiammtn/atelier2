@@ -8,17 +8,17 @@
 
 body {
     font-family:  sans-serif;
+    overflow-x: hidden;
 }
 
-nav {
+.navbar {
+    display: flex;
+    flex-direction: row;
     background: rgb(55, 55, 55);
-    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
 .logo {
     color: white;
     font-size: 30px;
@@ -28,7 +28,7 @@ nav {
 ul {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 100px;
 }
 
 ul li {
@@ -60,7 +60,7 @@ a.active, a:hover {
 
 
 .accueil{
-min-height: 300px;
+    min-height: 400px;
     background: url(main.jpg);
     background-size: cover;
     background-position: center;
@@ -118,9 +118,8 @@ button{
 
 .titre {
     position: absolute;
-    color: black;
-    font-size: 15px;
-    margin: -50px 0px;
+    color: white;
+    font-size: 20px;
     bottom: 50px;
     width: 100%;
     text-align: center;
@@ -139,8 +138,6 @@ button{
     z-index: 1;
     width: 100%;
     height: 800px;
-    margin-top: -712px;
-    margin-bottom: -89px;
     object-fit: cover;
     object-position: center;
 }
@@ -148,7 +145,7 @@ button{
 .slide-dot{ 
     text-align: center;
     position: relative;
-    margin-top: 160;
+    margin-top: -60px;
 }
 
 .dot {
@@ -306,6 +303,9 @@ footer p{
 
 
 @media (max-width: 952px){
+    body{
+        overflow-x: hidden;
+    }
     .logo{
         padding-left: 5%;
     }
@@ -314,7 +314,7 @@ footer p{
     }
     }
 @media (max-width: 858px){
-        nav {
+        .navbar {
             flex-direction: column; 
             height: auto;
           }
@@ -322,6 +322,7 @@ footer p{
           ul {
             margin-top: 10px; 
             flex-direction: column;
+            margin-left: revert-layer;
           }
         
           ul li {
@@ -334,8 +335,7 @@ footer p{
     .cards { grid-template-columns: repeat(1, 1fr)}
     .cards2 { grid-template-columns: repeat(1, 1fr)}
     #contact .divider{
-       
-        width: 400px;
+        width: 300px;
        }
     #submit{
         margin-left: 40px;
@@ -350,9 +350,10 @@ footer p{
         display: block;
     }
     form {
-        justify-content: center;
-        display: block;
-        margin-top: 0em;
-        margin-block-end: 1em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 26px;
     }
 }
