@@ -338,9 +338,13 @@ footer p{
         width: 300px;
        }
     #submit{
-        margin-left: 40px;
-        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
         
+    }
+    #nom{
+        margin-top: -10px;
     }
     #email{
         margin-left: -20px;
@@ -349,11 +353,14 @@ footer p{
         text-align: center;
         display: block;
     }
+    input{
+        margin-left: 30px;
+    }
     form {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 26px;
+        grid-row-gap: 5px;
     }
 }
