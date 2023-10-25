@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="travel.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+
+    <body> 
+        <div class="container">
+            <nav>
+                <div class="logo"><h2>Travel-IAGI2<span style="color:orange;font-size:35px;">.</span></h2></div>
+                <ul>
+                    <li><a class="active" href="#">Accueil</a></li>
+                    <li><a href="#destination">Destination</a></li>
+                    <li><a href="#circuits">Circuits</a></li>
+                    <li><a href="#contact"><span class="fas fa-envelope"></span> Contanct</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="accueil" class="accueil" >
+            <h1>Organiser Votre voyage Sur Mesure.</h1>
+            <p>Le site IAGI Travel vous permet de faire le tour du monde à des prix uniques !</p>
+            <button>Un conseiller est en ligne.</button>   
+        </section>
+
+        <div class="slide-container " id="destination">
+            <img class="slide-img" src="slide0.jpg">
+            <div class="custom-slider active">
+                <img class="slide" src="slide0.jpg">
+                <div class="titre">
+                    <h3> Amesbury </h3>
+                    <p> stonehenge </p>
+                </div>
+            </div>
+            <div class="custom-slider">
+                <img class="slide" src="slide1.jpg">
+                <div class="titre">
+                    <h3> Amesbury </h3>
+                    <p> stonehenge </p>
+                </div>
+            </div>
+            <div class="custom-slider">
+                <img class="slide" src="slide2.jpg">
+                <div class="titre">
+                    <h3> Amesbury </h3>
+                    <p> stonehenge </p>
+                </div>
+            </div>
+            <div class="custom-slider">
+                <img class="slide" src="slide3.jpg">
+                <div class="titre">
+                    <h3> Amesbury </h3>
+                    <p> stonehenge </p>
+                </div>
+            </div>
+            <div class="custom-slider">
+                <img class="slide" src="slide4.jpg">
+                <div class="titre">
+                    <h3> Amesbury </h3>
+                    <p> stonehenge </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="slide-dot">
+             
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <section id="circuits">
+            <div class="cards">
+                <div class="card">
+                    <img src="c1.png" alt="">
+                    <h2>Planifier</h2>
+                    <p>Confier-nous vos rèves: en famille ou entre amis nous trouverons la formule qui comblera vos attentes.</p>
+                </div>
+                <div class="card">
+                    <img src="c2.png" alt="">
+                    <h2>Organiser</h2>
+                    <p>Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+                </div>
+                <div class="card">
+                    <img src="c3.png" alt="">
+                    <h2>Voyager</h2>
+                    <p>Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sévérité tout au long de votre voyage.</p>
+                </div>
+            </div>
+            <div class="cards2">
+                <div class="card2">
+                    <div class="b">
+                        <h2>Parter En <br> Famille</h2>
+                        <div class="divider"></div>
+                        <p>Offrez le meilleur à ceux que vous aimez et partager ces moments fabuleux!</p>
+                    </div>
+                    <img src="a1.jpg">
+                </div>
+                <div class="card2">
+                    <div class="b">
+                        <h2>Envie de s'evader</h2>
+                        <div class="divider"></div>
+                        <p>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien !</p>
+                    </div>
+                    <img src="a2.jpg">
+                </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contacter-nous</h1>
+            <div class="divider"></div>
+            <p>Chez Travel-IAGI2 nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous 
+                mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.   </p>
+            <form>
+                <label>Votre Nom: </label>
+                <input type="text" placeholder="Entrez votre nom">
+                <label id="email">Votre Email:</label> 
+                <input type="text"  placeholder="Entrez votre email">
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </section>
+
+
+        <footer class="text-center">
+            <h1 >Travel-IAGI2 <font color="orange" > .</font></h1>
+            <p>Copiright IAGI-2 2O23</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  sans-serif;
+}
+
+nav {
+    background: rgb(55, 55, 55);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.accueil{
+min-height: 300px;
+    background: url(main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.accueil h1{
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.accueil p{
+    font-size: 20px;
+    color: rgb(120, 117, 117);
+    padding-left: 48px;
+    margin-top: 9px;
+}
+
+button{
+    font-size: 17px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 3px ;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 48px;
+}
+
+
+#destination{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.custom-slider { 
+    display: none;
+}
+.custom-slider.active {
+    display: block;
+}
+
+.slide-container {
+    max-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.titre {
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    margin: -50px 0px;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-img{
+    width: 100%;
+    height: 800px;
+    margin-top: 13px;
+    margin-bottom: -89px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide{
+    z-index: 1;
+    width: 100%;
+    height: 800px;
+    margin-top: -712px;
+    margin-bottom: -89px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-dot{ 
+    text-align: center;
+    position: relative;
+    margin-top: 160;
+}
+
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 30px;
+    margin: 0 2px;
+    background-color:grey ;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:hover { 
+    background-color: white; 
+}
+
+
+
+.cards{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1500px;
+    grid-gap: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between; 
+}
+.card{
+    border: #ddd solid 1px;
+    line-height: 20px;
+    padding: 1.5rem 2rem;
+    text-align: center; 
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.card h2{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.card p,.card2 p{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.cards2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: rgb(238, 237, 237);
+}
+
+.card2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: white;
+    line-height: 20px;
+    padding:1.5rem;
+    margin:20px 20px 20px;
+}
+
+.divider {
+    width: 180px;
+    height: 2px;
+    margin: 15px;
+    background-color:rgb(238, 237, 237);
+}
+
+.card2 b{
+    display: none;
+}
+
+.card2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+#contact{
+    margin-top: -22px;
+    margin-left: 15px ;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+#contact .divider{
+    width: 1100px;
+    height: 2px;
+    background-color:rgb(238, 237, 237);
+}
+
+#contact p{
+    font-size: 20px;
+}
+form{
+    margin-top: 15px;
+}
+
+input{
+    height: 40px;
+    border:1px solid #ddd;
+    width: 300px;
+    border-radius: 3px;
+}
+
+#email{
+    padding-left: 20px;
+}
+
+#submit{
+    width: 300px;
+    margin-left: 370px;
+    color: white;
+    background-color: #408bab;
+    border-radius: 3px;
+}
+::placeholder{
+    font-size: larger;
+    margin-left: 20px;
+}
+
+
+
+
+footer{
+    padding: auto;
+    background: #333;
+    text-align: center; 
+}
+
+footer h1{
+    margin: 0px;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+footer p{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: black;
+    margin-left: auto;
+    
+}
+
+
+@media (max-width: 952px){
+    .logo{
+        padding-left: 5%;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    }
+@media (max-width: 858px){
+        nav {
+            flex-direction: column; 
+            height: auto;
+          }
+        
+          ul {
+            margin-top: 10px; 
+            flex-direction: column;
+          }
+        
+          ul li {
+            margin: 5px 0; 
+          }
+          li{
+            font-size: 20px;
+            font-weight: bold;
+          }
+    .cards { grid-template-columns: repeat(1, 1fr)}
+    .cards2 { grid-template-columns: repeat(1, 1fr)}
+    #contact .divider{
+       
+        width: 400px;
+       }
+    #submit{
+        margin-left: 40px;
+        margin-top: 20px;
+        
+    }
+    #email{
+        margin-left: -20px;
+    }
+    #contact{
+        text-align: center;
+        display: block;
+    }
+    form {
+        justify-content: center;
+        display: block;
+        margin-top: 0em;
+        margin-block-end: 1em;
+    }
+}
